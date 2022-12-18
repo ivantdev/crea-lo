@@ -4,5 +4,10 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: env("PUBLIC_URL", "https://strapi-production-faee.up.railway.app")
+  url: env("PUBLIC_URL", "https://strapi-production-faee.up.railway.app"),
+  cron: { enabled: true },
+  cors: { enabled: true, origin: ['*'] },
+  admin: {
+    auth: { secret: env("ADMIN_JWT_SECRET", "9bf8cc74ab83590b280df0851beaec60") }
+  }
 });
