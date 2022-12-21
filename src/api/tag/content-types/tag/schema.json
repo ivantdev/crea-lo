@@ -20,19 +20,19 @@
       "relation": "oneToOne",
       "target": "api::tag.tag"
     },
-    "image": {
+    "images": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::image.image"
     },
-    "video": {
+    "videos": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::video.video"
     },
-    "creation": {
+    "creations": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::creation.creation"
     },
     "category": {
